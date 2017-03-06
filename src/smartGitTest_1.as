@@ -11,6 +11,19 @@ package
 			addChild(tf);
 			tf.text = "1234567890";
 			tf.background = true;
+			tf.text = getRandomNum(3,10).toString();
 		}
+		
+		public function getRandomNum(min:Number,max:Number):Number
+		{
+			if(min >= max)
+			{
+				return max;
+			}
+			var num:Number = 0;
+			num = Math.floor( Math.random() * (max - min + 1))+ min;
+			return num;
+		}
+		
 	}
 }
