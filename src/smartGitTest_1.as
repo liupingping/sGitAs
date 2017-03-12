@@ -25,5 +25,10 @@ package
 			return num;
 		}
 		
+		public function addEvent():void
+		{
+			
+		}
+		
 	}
 }
